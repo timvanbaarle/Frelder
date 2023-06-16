@@ -20,21 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val clMain = findViewById<ConstraintLayout>(R.id.clMain)
-        val textview = findViewById<TextView>(R.id.txtTitle)
 
-
-        swLamp?.setOnCheckedChangeListener({ _ , isChecked ->
-            if(isChecked){
-                textview.setText("on")
-                 clMain.setBackgroundResource(R.color.red)
-
-            }else{
-                textview.setText("off")
-                clMain.setBackgroundResource(R.color.white)
-
-
-            }
-        })
-        textview.setText("hallo test")
     }
 }
