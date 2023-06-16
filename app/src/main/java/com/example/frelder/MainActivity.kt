@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val clMain = findViewById<ConstraintLayout>(R.id.clMain)
-        val textview = findViewById<TextView>(R.id.txtTitle)
+        val textview = findViewById<TextView>(R.id. txtTitle)
 
 
         swLamp?.setOnCheckedChangeListener({ _ , isChecked ->
