@@ -2,66 +2,58 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/clMain"
+    android:id="@+id/cMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
-        style="@style/Widget.Material3.Button"
-        android:layout_width="129dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="155dp"
-        android:layout_marginTop="440dp"
-        android:layout_marginEnd="155dp"
+        android:id="@+id/button"
+        android:layout_width="136dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="133dp"
         android:backgroundTint="#18BAC0 "
-        android:text="Instellingen"
+        android:contentDescription="Instellingen"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:text="Intsellingen" />
 
     <Button
-        android:id="@+id/button"
-        style="@style/Widget.Material3.Button"
-        android:layout_width="153dp"
-        android:layout_height="164dp"
-        android:layout_marginStart="155dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginEnd="155dp"
+        android:id="@+id/button3"
+        android:layout_width="159dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="18dp"
         android:backgroundTint="#18BAC0 "
+        android:contentDescription="Home knop licht bedienen"
         android:text="Licht Bedienen"
-        android:textAlignment="center"
-        android:textIsSelectable="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="89dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dfrdfg" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:srcCompat="@drawable/image" />
 
-
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="40dp"
+        android:layout_height="44dp"
+        app:srcCompat="@drawable/lichtsettings"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="492dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
